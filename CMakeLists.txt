@@ -18,7 +18,7 @@ CPMAddPackage(
 add_executable(BoostAwaitError main.cpp)
 find_package (Threads REQUIRED)
 target_link_libraries(BoostAwaitError PUBLIC Threads::Threads)
-target_link_libraries(BoostAwaitError PUBLIC Boost::beast)
+target_link_libraries(BoostAwaitError PRIVATE Boost::beast Boost::thread)
 if(WIN32)
     target_link_libraries(BoostAwaitError PRIVATE wsock32 ws2_32)
 endif()
