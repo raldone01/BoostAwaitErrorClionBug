@@ -12,7 +12,7 @@ CPMAddPackage(
         NAME Boost
         VERSION 1.78.0
         GITHUB_REPOSITORY "boostorg/boost"
-        GIT_TAG "boost-1.78.0"
+        GIT_TAG "boost-1.80.0"
 )
 
 add_executable(BoostAwaitError main.cpp)
